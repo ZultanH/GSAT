@@ -38,10 +38,10 @@ from .modules.user_module           import cleanDict
 from .models.globals        import *
 from .modules.helperfuncs   import *
 
-JWT_SECRET = "Cu`t5zUQ$mt=9?qt"
+JWT_SECRET = ""
 
 app                              = Sanic(__name__)
-#app.secret_key                  = "Cu`t5zUQ$mt=9?qt"
+#app.secret_key                  = ""
 #app.permanent_session_lifetime  = timedelta(minutes=20)
 
 """
