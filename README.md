@@ -1,2 +1,2 @@
-# Wraithnet
-Wraithnet web backend
+# GSAT
+Gmod Server Administration Tool Web Backend
