@@ -27,7 +27,3 @@ class ShortURL:
         for char in string: 
             number = number * cls._base + cls._alphabet.index(char)
         return number
-
-if __name__ == "__main__":
-    newUrl = ShortURL.encode(32423423)
-    print(newUrl)
