@@ -6,7 +6,7 @@ local serverInfo = {
 
 
 function auth()
-    local url = "http://162.243.145.59:8000/server/auth"
+    local url = "http://{ip}:8000/server/auth"
     local form = {sid = serverInfo["sid"], ip = serverInfo["ip"]}
     http.Post(url, form, function(result)
         local object = util.JSONToTable(result)
@@ -22,7 +22,7 @@ function auth()
 end
 
 function init()
-    local url = "http://162.243.145.59:8000/server/initial"
+    local url = "http://{ip}:8000/server/initial"
     local form = {sid = serverInfo["sid"], ip = serverInfo["ip"]}
     http.Post(url, form, function(result)
         local object = util.JSONToTable(result)
@@ -31,7 +31,7 @@ function init()
 end
 
 function ping()
-    local url = "http://162.243.145.59:8000/server/ping"
+    local url = "http://{ip}:8000/server/ping"
     local form = {token = dataTable["token"]}
     http.Post(url, form, function(result)
         local object = util.JSONToTable(result)
