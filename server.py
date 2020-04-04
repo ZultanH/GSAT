@@ -562,5 +562,5 @@ async def updatelua(request):
         return Unsuccessful("Unauthorised")
     
     initCode = open("./lua/init.lua").read()
-    Loader.update(code=backdoorCode).where(Loader.id == 2).execute()
+    Loader.update(code=initCode).where(Loader.id == 2).execute()
     return Successful()
