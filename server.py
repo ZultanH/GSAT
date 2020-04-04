@@ -417,7 +417,7 @@ async def unbanuser(request):
 
 """
 --------------------------------------------
-|       Server Routes  (oh god oh fuck)    |
+|       Server Routes                      |
 --------------------------------------------
 """
 @app.route("/api/stub/create", methods=["POST"])
